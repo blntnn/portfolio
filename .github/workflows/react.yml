@@ -1,4 +1,3 @@
-
 name: NodeJS React
 
 on:
@@ -35,6 +34,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
       - name: 📚 Install dependencies
         run: yarn install --frozen-lockfile
 
